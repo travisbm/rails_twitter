@@ -10,13 +10,13 @@ tweet_count = [1, 3, 5, 7]
 
 10.times do
   user = User.new({
-    first_name: Faker::Name.first_name
-    last_name:  Faker::Name.last_name
-    username:   Faker::Internet.user_name
+    first_name: Faker::Name.first_name,
+    last_name:  Faker::Name.last_name,
+    username:   Faker::Internet.user_name,
     password_digest: 'password'
     })
 
-  tweet_count.sample times do
+  tweet_count.sample.times do
     tweet = Tweet.new({
       message: Faker::Hacker.say_something_smart
       })
