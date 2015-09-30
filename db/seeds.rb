@@ -17,7 +17,7 @@ tweet_count = [1, 3, 5, 7]
     })
 
   tweet_count.sample.times do
-    tweet = Tweet.new({
+    user.tweets.build({
       message: Faker::Hacker.say_something_smart
       })
   end
