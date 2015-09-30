@@ -69,6 +69,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    materialize-sass (0.97.1)
+      sass (~> 3.3)
     mime-types (2.6.2)
     mini_portile (0.6.2)
     minitest (5.8.1)
@@ -142,12 +144,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt
+  bcrypt (~> 3.1.10)
   byebug
   coffee-rails (~> 4.1.0)
-  faker
+  faker (= 1.5.0)
   jbuilder (~> 2.0)
   jquery-rails
+  materialize-sass (= 0.97.1)
   pg
   rails (= 4.2.4)
   sass-rails (~> 5.0)
