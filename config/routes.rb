@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-
-  get 'sessions/new'
-
-  get 'sessions/create'
-
-  get 'sessions/destroy'
-
   resources :users do
     resources :tweets
   end
 
   resources :tweets
+
+  get  '/login', to: 'sessions#new',   as: 'new_login'
+  post '/login', to: 'sessions#create', as: 'login'
+  delete '/logout', to: 'sessions#destroy', as: 'logout'
+
+  root 'users#index'
+
 end
