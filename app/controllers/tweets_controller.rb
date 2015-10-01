@@ -5,7 +5,6 @@ class TweetsController < ApplicationController
   # GET /tweets.json
   def index
     @tweets = Tweet.all
-    debugger
   end
 
   # GET /tweets/1
