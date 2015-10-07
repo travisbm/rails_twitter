@@ -28,7 +28,7 @@
   <tbody>
     <% @user.tweets.each do |tweet| %>
       <tr>
-        <td class="user_tweets"><%= tweet.message %></td>
+        <td id="user_tweets"><%= tweet.message %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,5 +36,5 @@
 
 <%= link_to 'New Tweet', new_tweet_path %>
 
-<a class="tweet_button" href="#!" data-activates="dropdown1">Top Tweet</a>
+<a class="tweet_button" href="#!">Top Tweet</a>
 

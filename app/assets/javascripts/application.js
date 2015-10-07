@@ -19,18 +19,20 @@ $( document ).ready(function() {
 
   $(".dropdown-button").dropdown();
 
-  // var userTweets = $( '.user_tweets' );
-
   $(".tweet_button").on('click', function(){
-    $(".user_tweets").css('background-color', 'blue')
+    $( "#user_tweets" ).toggleClass( "highlight");
   });
 
-//   $(".tweet_button").toggle( function(){
-//     $(".user_tweets").css('background-color', 'blue');
-// },function(){
-//     $(".user_tweets").css('background-color', 'pink');
-//   });
-// }
+  // var userTweets = $( '.user_tweets' );
 
+  // $(".tweet_button").on('click', function(){
+  //   $(".user_tweets").css('background-color', 'blue')
+  // });
 
+  //   $(".tweet_button").toggle( function(){
+  //     $(".user_tweets").css('background-color', 'blue');
+  // },function(){
+  //     $(".user_tweets").css('background-color', 'pink');
+  //   });
+  // }
 });
