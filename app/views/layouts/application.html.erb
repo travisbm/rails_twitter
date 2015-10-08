@@ -3,7 +3,6 @@
 <head>
   <title>RailsTwitter</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application'  %>
   <%= csrf_meta_tags %>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -39,6 +38,8 @@
 <% end %>
 
 <%= yield %>
+
+<%= javascript_include_tag 'application'  %>
 
 </body>
 </html>

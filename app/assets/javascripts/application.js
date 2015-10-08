@@ -23,5 +23,4 @@ $( document ).ready(function() {
     $( "#user_tweets" ).toggleClass( "highlight");
   });
 
-  // var userTweets = $( '.user_tweets' );
 });

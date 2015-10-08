@@ -1,3 +1,4 @@
+
 <%= form_for(@tweet) do |f| %>
   <% if @tweet.errors.any? %>
     <div id="error_explanation">
@@ -16,7 +17,8 @@
     <%= f.text_field :message %>
   </div>
 
-  <div class="actions">
+  <div class='btn btn-primary' id='newTweet'>Create Tweet</div>
+  <!-- <div class="actions">
     <%= f.submit %>
-  </div>
+  </div> -->
 <% end %>
