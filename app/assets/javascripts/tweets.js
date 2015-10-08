@@ -1,3 +1,4 @@
+
 $('#newTweet').on('click', function () {
   $.ajax({
     url: '/tweets',
